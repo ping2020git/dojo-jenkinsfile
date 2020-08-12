@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Run ansible script') {
             steps {
-                sh label: '', script: '${WORKSPACE}/start.sh'
+                sh label: '', script: 'bash ${WORKSPACE}/start.sh'
             }
         }
         
