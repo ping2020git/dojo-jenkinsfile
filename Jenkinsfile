@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Change Permission')  {
             steps {
-                sh label: '', chmod -R 755 ${WORKSPACE}/start.sh'
+                sh label: '', script: 'chmod -R 777 ${WORKSPACE}/'
             }
         }
         stage('Run ansible script') {
