@@ -8,7 +8,7 @@ pipeline {
         } 
         stage('Run ansible script') {
             steps {
-                sh label: '', script: '${WORKSPACE}/deploy_k8s/start.sh'
+                sh label: '', script: '${WORKSPACE}/start.sh'
             }
         }
         
